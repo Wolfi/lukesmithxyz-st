@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FantasqueSansM Nerd Font Mono:pixelsize=32:antialias=true:autohint=true";
+static char *font = "FantasqueSansM Nerd Font Mono:pixelsize=18:antialias=true:autohint=true";
 static char *font2[] = { "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 12;
 
@@ -28,7 +28,7 @@ char *vtiden = "\033[?6c";
 
 /* Kerning / character bounding-box multipliers */
 static float cwscale = 1.0;
-static float chscale = 1.0;
+static float chscale = 1.2;
 
 /*
  * word delimiter string
