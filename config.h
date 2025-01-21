@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FantasqueSansM Nerd Font Mono:pixelsize=19:antialias=true:autohint=true";
+static char *font = "FantasqueSansM Nerd Font Mono:pixelsize=17:antialias=true:autohint=true";
 static char *font2[] = { "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 12;
 
@@ -112,58 +112,83 @@ float alphaOffset = 0.0;
 float alphaUnfocus;
 
 /* Terminal colors (16 first used in escape sequence) */
-// static const char *colorname[] = {
-// 	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-// 	"#cc241d",
-// 	"#98971a",
-// 	"#d79921",
-// 	"#458588",
-// 	"#b16286",
-// 	"#689d6a",
-// 	"#a89984",
-// 	"#928374",
-// 	"#fb4934",
-// 	"#b8bb26",
-// 	"#fabd2f",
-// 	"#83a598",
-// 	"#d3869b",
-// 	"#8ec07c",
-// 	"#ebdbb2",
-// 	[255] = 0,
-// 	/* more colors can be added after 255 to use with DefaultXX */
-// 	"#add8e6", /* 256 -> cursor */
-// 	"#555555", /* 257 -> rev cursor*/
-// 	"#282828", /* 258 -> bg */
-// 	"#ebdbb2", /* 259 -> fg */
-// };
+static const char *colorname[] = {
+	"#1d2021", /* hard contrast: #1d2021 / medium contrast: #282828 / soft contrast: #32302f */
+	"#cc241d",
+	"#98971a",
+	"#d79921",
+	"#458588",
+	"#b16286",
+	"#689d6a",
+	"#a89984",
+	"#928374",
+	"#fb4934",
+	"#b8bb26",
+	"#fabd2f",
+	"#83a598",
+	"#d3869b",
+	"#8ec07c",
+	"#ebdbb2",
+	[255] = 0,
+	/* more colors can be added after 255 to use with DefaultXX */
+	"#add8e6", /* 256 -> cursor */
+	"#555555", /* 257 -> rev cursor*/
+	"#282828", /* 258 -> bg */
+	"#ebdbb2", /* 259 -> fg */
+};
 
 
 /* Terminal colors (16 first used in escape sequence) Rose Pine */
-static const char *colorname[] = {
-  "#1f1d2e",
-  "#eb6f92",
-  "#f6c177",
-  "#ebbcba",
-  "#31748f",
-  "#c4a7e7",
-  "#9ccfd8",
-  "#e0def4",
-  "#908caa", // "#26233a",
-  "#eb6f92",
-  "#f6c177",
-  "#ebbcba",
-  "#31748f",
-  "#c4a7e7",
-  "#9ccfd8",
-  "#908caa",
-	[255] = 0,
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#e0def4", /* 256 -> cursor */
-	"#555555", /* 257 -> rev cursor*/
-	"#191724", /* 258 -> bg */
-	"#e0def4", /* 259 -> fg */
-};
+/*static const char *colorname[] = {*/
+/*  "#1f1d2e",*/
+/*  "#eb6f92",*/
+/*  "#f6c177",*/
+/*  "#ebbcba",*/
+/*  "#31748f",*/
+/*  "#c4a7e7",*/
+/*  "#9ccfd8",*/
+/*  "#e0def4",*/
+/*  "#908caa", // "#26233a",*/
+/*  "#eb6f92",*/
+/*  "#f6c177",*/
+/*  "#ebbcba",*/
+/*  "#31748f",*/
+/*  "#c4a7e7",*/
+/*  "#9ccfd8",*/
+/*  "#908caa",*/
+/*	[255] = 0,*/
+/*	more colors can be added after 255 to use with DefaultXX */
+/*	"#e0def4", /* 256 -> cursor */
+/*	"#555555", /* 257 -> rev cursor*/
+/*	"#191724", /* 258 -> bg */
+/*	"#e0def4", /* 259 -> fg */
+/*};*/
 
+/* Terminal colors (16 first used in escape sequence) Gruvbox */
+/*static const char *colorname[] = {*/
+/*  "#1f1d2e", // bg1*/
+/*  "#eb6f92", // red*/
+/*  "#f6c177", // yellow*/
+/*  "#ebbcba", // rose*/
+/*  "#31748f", // blue*/
+/*  "#c4a7e7", // purple*/
+/*  "#9ccfd8", // cyan*/
+/*  "#e0def4", // fg0*/
+/*  "#908caa", // fg2*/
+/*  "#eb6f92", // red*/
+/*  "#f6c177", // yellow*/
+/*  "#ebbcba", // rose*/
+/*  "#31748f", // blue*/
+/*  "#c4a7e7", // purple*/
+/*  "#9ccfd8", // cyan*/
+/*  "#908caa", // fg2*/
+/*	[255] = 0,*/
+/*	more colors can be added after 255 to use with DefaultXX */
+/*	"#e0def4", /* 256 -> cursor / fg0*/
+/*	"#555555", /* 257 -> rev cursor / ?*/
+/*	"#191724", /* 258 -> bg / bg0*/
+/*	"#e0def4", /* 259 -> fg / fg0*/
+/*};*/
 
 /*
  * Default colors (colorname index)
